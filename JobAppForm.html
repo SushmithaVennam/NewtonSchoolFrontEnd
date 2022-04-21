@@ -1,0 +1,89 @@
+<!--Make a job app form having fields Name*, Email*, Gender* (radio), Laptop Brands(options : [Apple, Asus, HP]), Age*, DOB*, Password* & submit button.
+
+Also, Take input from the users where they can paste the website URL of their portfolio. The input element must have portfolio as id
+
+Instructions: * are required fields,
+Use method attribute value that you should use in this case for the form!
+
+The respective input elements for the mentioned fields should have ids
+#name, #email, #password, #age, #dob
+
+The element for selecting laptop brand should have id #laptop
+
+The radio buttons for gender should have name atrribute as gender.
+
+
+All input elements must also have corresponding labels with for attribute set to id's of element they belong to.
+Example label for input of name will be <label for="name"> Name</label>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action_page.php" method="post">
+
+    <br>
+    <p>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter Name" name="name" required>
+    </p>
+
+    <p>
+    <br>
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter Email" name="email" required>
+    </p>
+
+    <p>
+    <br>
+    <label for="gender">Gender</label>
+    <input type="radio" id="gender" value="male" name="gender" required>Male
+    <input type="radio" id="gender" value="female" name="gender" required>Female
+    </p>
+
+    <p>
+    <br>
+    <label for="laptop">Laptop Brand</label>
+    <select id="laptop" name="laptop">
+        <option value="Apple">Apple</option>
+        <option value="Asus">Asus</option>
+        <option value="HP">HP</option>
+    </select>
+    </p>
+
+    <p>
+    <br>
+    <label for="age">Age</label>
+    <input type="number" id="age" placeholder="Enter Age" name="age" required>
+    </p>
+
+    <p>
+    <br>
+    <label for="dob">DOB</label>
+    <input type="date" id="dob" placeholder="Enter DOB" name="dob" required>
+    </p>
+
+    <p>
+    <br>
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter password" name="password" required>
+    </p>
+
+    <p>
+    <br>
+    <label for="portfolio">Enter URL</label>
+    <input type="url" id="portfolio" placeholder="Enter portfolio URL" name="portfolio">
+    </p>
+
+    <br>
+    <button type="submit" name="submit">submit</button>
+    </form>
+
+</body>
+</html>
